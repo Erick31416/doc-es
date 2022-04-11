@@ -167,17 +167,13 @@ $instancia = new $nombreClase(); // new ClaseSencilla()
 ]]>
    </programlisting>
   </example>
-  <para>
-   En el contexto de una clase, es posible crear un nuevo objeto con
-   <literal>new self</literal> y <literal>new parent</literal>.
-  </para>
-  <para>
-   Cuando se asigna una instancia ya creada de una clase a una nueva variable, ésta última
-   accederá a la misma instancia que el objeto que le fue asignado. Esta
-   conducta es la misma que cuando se pasan instancias a una función. Se puede
-   realizar una copia de un objeto ya creado a través de la
-   <link linkend="language.oop5.cloning">clonación</link> del mismo.
-  </para>
+    <para>
+     A partir de PHP 8.0.0, se admite el uso de <literal>new</literal> con expresiones arbitrarias.
+     Esto permite una instanciación más compleja si la expresión produce un <type>string</type>.
+     Las expresiones deben estar entre paréntesis
+  
+    </para>
+  
   <example>
    <title>Asignación de objetos</title>
    <programlisting role="php">
